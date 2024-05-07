@@ -1,0 +1,135 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --heading-font: "Big Shoulders Display", cursive;
+  --text-font: "Lexend Deca", sans-serif;
+}
+
+/* General Style Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  background-color: #f2f2f2;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.bg-orange {
+  background-color: #e28525;
+}
+
+.bg-light-green {
+  background-color: #016972;
+}
+
+.bg-dark-green {
+  background-color: #00403f;
+}
+/* General Style End */
+
+/* Reusable Code Start */
+
+h2,
+p {
+  color: #f2f2f2;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  opacity: 0.7;
+  line-height: 1.6;
+  width: 90%;
+}
+
+p,
+.card-btn {
+  font-family: var(--text-font);
+  font-size: 1.5rem;
+}
+
+.font-color-1 a {
+  color: #e28525;
+}
+
+.font-color-2 a {
+  color: #016972;
+}
+
+.font-color-3 a {
+  color: #00403f;
+}
+
+.card-btn a {
+  background-color: #f2f2f2;
+  width: 60%;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 6rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-btn a:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+/* Reusable Code End */
+
+/* Card Styling Start*/
+
+.cards {
+  max-width: 900px;
+  display: flex;
+  margin: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cards > * {
+  flex: 1;
+}
+
+.card {
+  padding: 4rem 3rem;
+}
+
+.card-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (max-width: 899px) {
+  .cards {
+    flex-direction: column;
+  }
+}
